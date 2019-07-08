@@ -11,11 +11,11 @@ const register = config => {
   fetch(`${topinambur}/add`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },
-    body: {
+    body: JSON.stringify({
       secret,
       source
-    }
-  }).then(console.log);
+    })
+  }).then();
 };
 
 const start = config => {
