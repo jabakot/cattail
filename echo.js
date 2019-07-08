@@ -15,13 +15,7 @@ const register = config => {
       secret,
       source
     }
-  }).then(v => {
-    if (v !== "error") {
-      console.log("registered!");
-    } else {
-      console.log(v);
-    }
-  });
+  }).then(console.log);
 };
 
 const start = config => {
