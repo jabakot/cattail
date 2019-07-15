@@ -13,8 +13,8 @@ const rollStats = () => {
     const stat = sum - block.min;
     stats.push(stat);
     embeded.addField(
-      `Why ${stat}`,
-      `${block.rolls.join(" + ")} - ${block.min} (minumum) roll =  ${stat} `
+      `Why ${stat}, rolls ->${block.rolls.join(", ")}`,
+      `${block.rolls.join(" + ")} - (${block.min}, as minumum roll) =  ${stat} `
     );
   }
   embeded.setTitle(`Your stats ->>\t${stats.join(", ")}`);

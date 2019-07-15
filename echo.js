@@ -20,7 +20,7 @@ const register = config => {
 
 const start = config => {
   register(config);
-  stopJob = setInterval(job(config.topinambur), toMs(10));
+  stopJob = setInterval(job(config.topinambur), toMs(3));
 };
 
 const stop = () => clearInterval(stopJob);

@@ -11,9 +11,9 @@ const rollStats = () => {
     const stat = sum - block.min;
     stats.push(stat);
     explanations.push(
-      `Why ${stat}: ${block.rolls.join(" + ")} - ${
+      `Why ${stat}: ${block.rolls.join(" + ")} - (${
         block.min
-      } (minumum) roll =  ${stat} `
+      }  as minumum roll) =  ${stat} `
     );
   }
   return `Your stats:\t <b>${stats.join(", ")}</b>\nSorted:\t<b>${stats
